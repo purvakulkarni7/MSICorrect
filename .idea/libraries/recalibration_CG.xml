@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="recalibration_CG">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/recalibration_CG/out/artifacts/recalibration_CG.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

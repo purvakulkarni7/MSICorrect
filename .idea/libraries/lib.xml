@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/recalibration_CG/lib/RserveEngine.jar!/" />
+      <root url="jar://$PROJECT_DIR$/recalibration_CG/lib/REngine.jar!/" />
+      <root url="jar://$PROJECT_DIR$/recalibration_CG/lib/Rserve.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

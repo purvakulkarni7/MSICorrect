@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: MSICorrectV_1_0_0.jar
+Main-Class: de.uni_jena.bioinformatik.main.SpectralRecalibration
+

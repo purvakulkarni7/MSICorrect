@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: de.unijena.bioinf:java-utilities:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/unijena/bioinf/java-utilities/1.0-SNAPSHOT/java-utilities-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/de/unijena/bioinf/java-utilities/1.0-SNAPSHOT/java-utilities-1.0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/unijena/bioinf/java-utilities/1.0-SNAPSHOT/java-utilities-1.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
