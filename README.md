@@ -14,7 +14,7 @@ _[IEEE/ACM Trans Comput Biology Bioinform, 5(1):91-100, 2008.](https://dx.doi.or
 
 ## Download link ##
 
-MSICorrect v1.0.0 can be downloaded as a jar file here
+MSICorrect v1.0.0 can be downloaded as a jar file [here](https://github.com/purvakulkarni7/MSICorrect/blob/master/MSICorrect-Jar-v1.0.0.zip).
 
 The complete source code can be found at [GitHub](https://github.com/purvakulkarni7/MSICorrect).
 
@@ -54,7 +54,7 @@ in geometrical space (example: 0.5).
 6. **Mass threshold for for line-pair stabbing recalibration**   
 Suitable mass window (in Da) depending on the dataset, to perform recalibration of two peaklists (example: 0.8).
 
-# Input file type
+## Input file type ##
 As an pinput, MSICorrect requires a directory path containing mass spectra. The spectra should be be preprocessed and peak-picked before being submitted for recalibration. Preprocessing and peak-detection of imaging MS data be performed using several packages available in Matlab or R. The peaklists generated should be exported as individual tab-separated text files with coordinate values for each spectra comprising the first line of the first. A short example of such a file is provided below:
 
     34	18
@@ -70,19 +70,56 @@ As an pinput, MSICorrect requires a directory path containing mass spectra. The 
     111.8753	118.473873
     112.8081	115.421191
 
-# Sample data
+## Sample data ##
 
-Sample data to run MSICorrect can be found [here]().
-    
+Sample data to run MSICorrect can be found [here](https://github.com/purvakulkarni7/MSICorrect/blob/master/Sample_data.zip).
+To use the sample data, dowload and unzip the folder. The sample data contains 1184 peaklists in text file format. To use the sample dataset, launch MSICorrect using the command provided about. The user input screen should look like the below:
 
+````
+************************************************************************
+  __  __   _____  _____  _____                               _   
+ |  \/  | / ____||_   _|/ ____|                             | |  
+ | \  / || (___    | | | |      ___   _ __  _ __  ___   ___ | |_ 
+ | |\/| | \___ \   | | | |     / _ \ | '__|| '__|/ _ \ / __|| __|
+ | |  | | ____) | _| |_| |____| (_) || |   | |  |  __/| (__ | |_ 
+ |_|  |_||_____/ |_____|\_____|\___/ |_|   |_|   \___| \___| \__|
+                                                                 
+version 1.0.0		Contact: Purva Kulkarni (purva.kulkarni@uni-jena.de)
+************************************************************************
 
+Commandline usage: java -jar MSICorrectV_1_0_0.jar
+Access help: java -jar MSICorrectV_1_0_0.jar --help
+=================================================================
 
+MSICorrect needs the following user input
+---
+File path for input mass spectra: Sample_data/
+File path to store recalibrated spectra: Recalibrated_spectra_output_folder/                 
+Mass threshold for distance calculation between two peaklists: 0.5
+Peaklist ordering approach (use TG or CG): CG
+Line distance to perform line-pair stabbing recalibration: 0.5
+Mass threshold for line-pair stabbing recalibration: 1.0
+````
+MSICorrect will display the following steps while recalibrating the peaklists
 
+````
+STEP 1 of 6: Reading directory path and parsing data files
+Total data coordinates: x = 37 y = 32
+There are 756 empty peaklists in the provided mass lists.
+---
+STEP 2 of 6: Now performing distance calculation.
+---
+STEP 3 of 6: Generated pixel scores for all co-ordinate positions. Now performing peaklist ordering.
+---
+STEP 4 of 6: Ranked list generated (Size: 429). Now generating final consensus spectrum.
+---
+STEP 5 of 6: Final consensus spectrum generated. Now recalibrating the input peaklists against the final consensus spectrum.
+---
+STEP 6 of 6: All new recalibrated files successfully generated!
+````
+The recalibrated files can be found in the provided output folder. 
 
-    
-    
+## Changelog ##
 
-
-
-
-
+### 1.0.0
+* release version
